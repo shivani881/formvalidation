@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Welcome to Travel Company</title>
+  </head>
+  <body>
+    <div id="message"></div>
+    <h1>Your Travel Company</h1>
+    <hr>
+    <div class="container">
+<form class="row g-3">
+  <div class="col-md-6">
+    <label for="name" class="form-label">Username</label>
+    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+    <small id="namevalid" class="form-text invalid-feedback text-danger">Your username must be 2-12 characters long and should not start with a number.</small>
+  </div>
+  <div class="col-md-6">
+    <label for="email" class="form-label">Email</label>
+    <input type="text" class="form-control" id="email" placeholder="Enter your Email">
+    <small id="emailvalid" class="form-text invalid-feedback text-danger">Enter a valid email.</small>
+  </div>
+  <div class="col-12">
+    <label for="address" class="form-label">Address</label>
+    <input type="text" class="form-control" id="address" placeholder="Noida , Sector 62">
+  </div>
+  <div class="col-md-4">
+    <label for="city" class="form-label">City</label>
+    <input type="text" class="form-control" id="city">
+  </div>
+  <div class="col-md-4">
+    <label for="car" class="form-label">Select your car</label>
+    <select id="car" class="form-select">    
+    <option>Omni</option>
+     <option>Maruti 800</option>
+     <option>Ford Titanium</option>
+     <option>Audi A4 </option>
+    </select>
+  </div>
+  <div class="col-md-4">
+    <label for="phoneNo." class="form-label">Enter your phone number</label>
+    <input type="text" class="form-control" id="phoneNo">
+    <small id="phonevalid" class="form-text invalid-feedback text-danger">Please give a valid number. it must be 10 digit long.</small>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="checkme">
+      <label class="form-check-label" for="checkme">
+        Check me out if your all details are correct.
+      </label>
+      <small id="checkvalid" class="form-text invalid-feedback text-danger">you must check the box after fill all the valid info.</small>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+  </div>
+</form>
+</div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+    <script src="index.js"></script>
+  </body>
+</html>
